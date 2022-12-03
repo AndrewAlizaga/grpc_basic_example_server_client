@@ -27,12 +27,14 @@ func SignUp(c *gin.Context){
 
 		if err != nil {
 			log.Println("bad response from server")
-			c.IndentedJSON(http.StatusForbidden, err)
+			c.IndentedJSON(http.StatusForbidden, err.Error())
+			return
 		}
 
 		if res.GetError() != ""{
 			log.Println("bad response from server")
-			c.IndentedJSON(http.StatusForbidden, err)
+			c.IndentedJSON(http.StatusForbidden, res.GetError())
+			return
 		} 
 
 		log.Println("successful signup")
@@ -40,10 +42,36 @@ func SignUp(c *gin.Context){
 
 	}
 
-	return
 }
 
 
 func Login(c *gin.Context){
-	
+	var accountRequest accountapiv1.LoginRequest
+
+	if err := c.BindJSON(&accountRequest); err != nil {
+		log.Println("bad request on body")
+		c.IndentedJSON(http.StatusBadRequest, errors.New("bad request on body"))
+		
+	}else {
+		
+
+		res, err := accountclientv1.AccountLogin(&accountRequest)
+
+		if err != nil {
+			log.Println("bad response from server")
+			c.IndentedJSON(http.StatusForbidden, err.Error())
+			return
+		}
+
+		if res.GetError() != ""{
+			log.Println("bad response from server")
+			c.IndentedJSON(http.StatusForbidden, res)
+			return
+		} 
+
+		log.Println("successful login")
+		c.IndentedJSON(http.StatusAccepted, res)
+
+	}
+
 }

@@ -1,6 +1,6 @@
 cloud.google.com/go v0.26.0/go.mod h1:aQUYkXzVsufM+DwF1aE+0xfcU+56JwCaLick0ClmMTw=
-github.com/AndrewAlizaga/-grpc_basic_example_grpc_client v0.0.1 h1:8jWZdaod8WY0Yd9uIL4MgGqJvGk9xswVtkOajdvIh1s=
-github.com/AndrewAlizaga/-grpc_basic_example_grpc_client v0.0.1/go.mod h1:qzWEJs0rI4fcIyKfeXYER1v8zFcvyeXvKnPqx+KqrDw=
+github.com/AndrewAlizaga/-grpc_basic_example_grpc_client v0.0.3 h1:2vFfgit1obO9M7ooT0I+FJS/GEeIlpI167dMXvvlqmc=
+github.com/AndrewAlizaga/-grpc_basic_example_grpc_client v0.0.3/go.mod h1:qzWEJs0rI4fcIyKfeXYER1v8zFcvyeXvKnPqx+KqrDw=
 github.com/AndrewAlizaga/grpc_basic_example_proto v0.0.4 h1:CPeg9j+uKQjFZnhlas193EAo2jTfOamtCPdzmT0s7TA=
 github.com/AndrewAlizaga/grpc_basic_example_proto v0.0.4/go.mod h1:qUINVoQRdvV/W8GVUWtnNr1EOA2YE2xNCrt7GwRvV98=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=

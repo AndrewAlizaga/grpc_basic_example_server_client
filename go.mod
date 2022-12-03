@@ -14,7 +14,7 @@ require (
 )
 
 require (
-	github.com/AndrewAlizaga/-grpc_basic_example_grpc_client v0.0.2
+	github.com/AndrewAlizaga/-grpc_basic_example_grpc_client v0.0.3
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/go-playground/locales v0.14.0 // indirect
 	github.com/go-playground/universal-translator v0.18.0 // indirect

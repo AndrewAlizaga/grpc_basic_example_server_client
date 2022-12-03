@@ -8,8 +8,7 @@ import (
 )
 
 func main(){
-
-
+	startGinServer()
 }
 
 func startGinServer(){
